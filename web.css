@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*  Fondo de pantalla    */
+body
+{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*    Contenedor del cv     */
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.5);  
+}
+
+/*     Contenedor claro-izquierda    */
+.container .izquierda
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+/*      Contenedor oscuro-izquierda    */
+.container .derecha
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+/*     perfil texto    */
+.perfilTexto
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20ox;
+    border-bottom: 1px solid rgba(225, 255, 255, 0.2);
+}
+/*     foto de perfil    */
+.perfilTexto .img1
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/*      foto de perfil    */
+.perfilTexto .img1 img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.perfilTexto h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.perfilTexto h2 span
+{
+    font-size: 0.8em;
+    font-weight: 200;
+}
+/*    informacion de contacto    */
+.contactoInfo
+{
+    padding-top: 50px;
+}
+.titulo
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactoInfo ul
+{
+    position: relative;
+}
+.contactoInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactoInfo ul li .icono
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactoInfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactoInfo.educacion li
+{
+    margin-bottom: 30px;
+}
+.contactoInfo.educacion h5
+{
+    color: #03a9f4;
+    font-weight: 300;
+}
+.contactoInfo.educacion h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+.contactoInfo.educacion h4
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactoInfo.lengua .porcentaje
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 3px;
+}
+.contactoInfo.lengua .porcentaje div
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+/*  diesño de l caja contenedora de la experiencia laboral  */
+.acercaDeMi
+{
+    margin-bottom: 50px;
+}
+.acercaDeMi:last-child
+{
+    margin-bottom: 0;
+
+}
+.titulo2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+/* diselo del texto   descripcion del trabajo y acerca de mi   */
+p
+{
+    color: #333;
+}
+/*  diesño de l caja contenedora de la experiencia laboral  */
+.acercaDeMi .caja
+{
+    display: flex;    
+    flex-direction: row;
+    margin: 20px 0;    
+}
+/*  diseño de los años en las empresas  */
+.acercaDeMi .caja .year_company
+{
+    min-width: 150px;    
+}
+/*  diseño de los años en las empresas  */
+.acercaDeMi .caja .year_company h5
+{
+    text-transform: uppercase;  
+    color: #848c90; 
+    font-weight: 400;
+    font-size: smaller;
+}
+/*   diseño de los titulos de los trabajos  */
+.acercaDeMi .caja .texto3 h4
+{
+    text-transform: uppercase;  
+    color: #2a7da2 ;
+    font-size: 16px;
+}
+/*    diseño de la caja de las habilidades  */
+.habilidades .caja
+{
+    
+ position: relative;
+ width: 100%;
+ display: grid;
+ grid-template-columns: 160px 1fr; /* si modifico el numero varia la long*/
+ justify-content: center;
+ align-items: center;
+ margin: 2%;
+ 
+}
+/*   diseño de los textos de las habilidades   */
+.habilidades .caja h4
+{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 500;
+}
+/*   diseño de los porcentajes  de habilidades   */
+.habilidades .caja .porcentaje
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+    display: block;
+    margin-top: 5px;
+
+}
+/*   diseño de los porcentajes  de habilidades   */
+.habilidades .caja .porcentaje div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+   
+}
+/*  tiutlo de los intereses  */
+.intereses .titulo2
+{
+    margin-top: 8%;
+
+}
+/*   diseño de los intereses  */
+.intereses ul
+{
+    position: static;
+    display:grid;
+    grid-template-columns: repeat(4,1fr); /* aqui dividimos en 4 la fila*/
+}
+/*   nombre de  los intereses  */
+.intereses ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 10;
+}
+/*  iconos de intereses  */
+.intereses ul li .fa
+{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+   
+}
+/*  Titulo proyectos   */
+.proyectos .titulo2
+{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+/*   Botones de proyectos   */
+ .botones
+{
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around; 
+}
+.botones a
+{
+    
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #03a9f4 ;
+    border-radius: 50%;
+    color: #f0f0f0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+.botones a:hover
+{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
